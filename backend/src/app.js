@@ -1,3 +1,4 @@
+
 const express = require("express");
 const cors = require("cors");
 
@@ -8,11 +9,19 @@ const errorMiddleware = require("./middleware/errorMiddleware");
 
 const app = express();
 
-// Middleware
-app.use(cors());
+const corsOptions = {
+  origin: [
+    "https://taskly-seven-sigma.vercel.app",
+    "http://localhost:5173",
+  ],
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
-// Health check
 app.get("/api/health", (req, res) => {
   res.status(200).json({
     success: true,
@@ -20,7 +29,6 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// API routes
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/users", userRoutes);
