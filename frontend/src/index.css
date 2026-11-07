@@ -3436,11 +3436,12 @@ a {
 
 [data-theme="dark"] .auth-page:has(.auth-card) {
   background: linear-gradient(
-    135deg,
+  135deg,
     #170918 0%,
-    #270C25 50%,
-    #301129 100%
-  );
+    #2E1C2E 45%,
+    #4A1638 75%,
+    #170918 100%
+);
 }
 
 [data-theme="dark"] .auth-page:has(.auth-card) .auth-card {
