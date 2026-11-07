@@ -3427,3 +3427,110 @@ a {
     border-radius: 17px;
   }
 }
+
+
+/* =========================================
+   TASKLY AUTH PAGES - DARK THEME
+   Login and Register only
+========================================= */
+
+[data-theme="dark"] .auth-page:has(.auth-card) {
+  background: linear-gradient(
+    135deg,
+    #170918 0%,
+    #270C25 50%,
+    #301129 100%
+  );
+}
+
+[data-theme="dark"] .auth-page:has(.auth-card) .auth-card {
+  background: #2E1C2E;
+  border: 1px solid #5A2948;
+  color: #FFFFFF;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+[data-theme="dark"] .auth-card .auth-heading h1 {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .auth-card .auth-heading p {
+  color: #E9C8C0;
+}
+
+/* Login/Register tabs */
+[data-theme="dark"] .auth-card .auth-tabs {
+  background: #301129;
+}
+
+[data-theme="dark"] .auth-card .auth-tab {
+  color: #E9C8C0;
+}
+
+[data-theme="dark"] .auth-card .auth-tab-active {
+  background: #FF2D8B;
+  color: #FFFFFF;
+}
+
+/* Form labels */
+[data-theme="dark"] .auth-card .auth-form-group label {
+  color: #E9C8C0;
+}
+
+/* Input fields */
+[data-theme="dark"] .auth-card .auth-input-wrapper {
+  background: #321A32;
+  border: 1px solid #75405F;
+  color: #B5696B;
+}
+
+[data-theme="dark"] .auth-card .auth-input-wrapper input {
+  background: transparent;
+  color: #FFFFFF;
+  caret-color: #FFFFFF;
+}
+
+[data-theme="dark"] .auth-card .auth-input-wrapper input::placeholder {
+  color: #B5696B;
+}
+
+/* Chrome autofill correction */
+[data-theme="dark"] .auth-card .auth-input-wrapper input:-webkit-autofill,
+[data-theme="dark"] .auth-card .auth-input-wrapper input:-webkit-autofill:hover,
+[data-theme="dark"] .auth-card .auth-input-wrapper input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 0 1000px #321A32 inset;
+  caret-color: #FFFFFF;
+}
+
+/* Password visibility */
+[data-theme="dark"] .auth-card .password-toggle {
+  color: #B5696B;
+}
+
+/* Remember me */
+[data-theme="dark"] .auth-card .remember-me {
+  color: #E9C8C0;
+}
+
+/* Links */
+[data-theme="dark"] .auth-card .forgot-password-link,
+[data-theme="dark"] .auth-card .auth-footer a {
+  color: #FF2D8B;
+}
+
+/* Primary button */
+[data-theme="dark"] .auth-card .auth-submit-button {
+  background: #FF2D8B;
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .auth-card .auth-submit-button:hover {
+  background: #E60073;
+}
+
+/* Footer */
+[data-theme="dark"] .auth-card .auth-footer {
+  color: #E9C8C0;
+}
