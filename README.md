@@ -26,9 +26,11 @@
 | **Academic Status** | Final-Year B.Tech Student |
 | **Course** | B.Tech – Data Science and Artificial Intelligence |
 | **Internship Organization** | CODEC Technologies India |
+| **Internship Task** | Task 2 - To-Do List Application (Advanced MERN Architecture) |
 | **Internship Designation** | Full Stack Developer Intern |
 | **Internship Location** | Pan India – Hybrid |
 | **Internship Duration** | 27 October 2026 – 27 November 2026 |
+
 
 ---
 
