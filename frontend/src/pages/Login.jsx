@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -10,6 +11,7 @@ import {
 
 import { loginUser } from "../services/authService";
 import { useAuth } from "../context/AuthContext";
+import BrandLogo from "../components/BrandLogo";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -62,6 +64,9 @@ const Login = () => {
   return (
     <div className="auth-page">
       <div className="auth-card">
+
+        <BrandLogo className="auth-brand-logo" />
+
         {/* Login / Register Tabs */}
         <div className="auth-tabs">
           <div className="auth-tab auth-tab-active">
@@ -130,9 +135,7 @@ const Login = () => {
                 id="password"
                 name="password"
                 type={
-                  showPassword
-                    ? "text"
-                    : "password"
+                  showPassword ? "text" : "password"
                 }
                 placeholder="Enter your password"
                 value={formData.password}
@@ -168,9 +171,7 @@ const Login = () => {
             <label className="remember-me">
               <span
                 className={`custom-checkbox ${
-                  rememberMe
-                    ? "checked"
-                    : ""
+                  rememberMe ? "checked" : ""
                 }`}
               >
                 {rememberMe && (
@@ -182,9 +183,7 @@ const Login = () => {
                 type="checkbox"
                 checked={rememberMe}
                 onChange={(event) =>
-                  setRememberMe(
-                    event.target.checked
-                  )
+                  setRememberMe(event.target.checked)
                 }
               />
 
@@ -205,9 +204,7 @@ const Login = () => {
             className="auth-submit-button"
             disabled={loading}
           >
-            {loading
-              ? "Signing In..."
-              : "Login"}
+            {loading ? "Signing In..." : "Login"}
           </button>
         </form>
 

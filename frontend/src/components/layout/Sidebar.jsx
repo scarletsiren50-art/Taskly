@@ -1,3 +1,4 @@
+
 import { NavLink } from "react-router-dom";
 import {
   LayoutDashboard,
@@ -7,7 +8,9 @@ import {
   LogOut,
   Plus,
 } from "lucide-react";
+
 import { useAuth } from "../../context/AuthContext";
+import BrandLogo from "../BrandLogo";
 
 const Sidebar = () => {
   const { logout } = useAuth();
@@ -38,8 +41,7 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <div className="logo-mark">T</div>
-        <span>Taskly</span>
+        <BrandLogo className="sidebar-brand-logo" />
       </div>
 
       <nav className="sidebar-nav">

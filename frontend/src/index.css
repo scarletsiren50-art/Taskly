@@ -3535,3 +3535,93 @@ a {
 [data-theme="dark"] .auth-card .auth-footer {
   color: #E9C8C0;
 }
+
+
+
+/* Taskly Brand Logo */
+
+.taskly-brand-logo {
+  display: block;
+  width: 190px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Sidebar logo */
+
+.sidebar-brand-logo {
+  width: 185px;
+  max-width: 100%;
+}
+
+/* Authentication pages */
+
+.auth-brand-logo {
+  width: 260px;
+  max-width: 80%;
+  margin: 0 auto 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .auth-brand-logo {
+    width: 220px;
+  }
+
+  .sidebar-brand-logo {
+    width: 155px;
+  }
+}
+
+
+/* =====================================
+   TASKLY BRAND LOGO
+===================================== */
+
+.taskly-brand-logo {
+  display: block;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Authentication pages */
+
+.auth-brand-logo {
+  width: 220px;
+  max-width: 85%;
+  max-height: 105px;
+  margin: 0 auto 18px;
+}
+
+/* Main application sidebar */
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 76px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-brand-logo {
+  width: 180px;
+  max-width: 100%;
+  max-height: 65px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .auth-brand-logo {
+    width: 190px;
+    max-height: 90px;
+  }
+
+  .sidebar-brand-logo {
+    width: 150px;
+  }
+}

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import { registerUser } from "../services/authService";
+import BrandLogo from "../components/BrandLogo";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -56,6 +57,9 @@ const Register = () => {
   return (
     <div className="auth-page">
       <div className="auth-card">
+
+        <BrandLogo className="auth-brand-logo" />
+
         {/* Login / Register Tabs */}
         <div className="auth-tabs">
           <Link
@@ -145,9 +149,7 @@ const Register = () => {
                 id="password"
                 name="password"
                 type={
-                  showPassword
-                    ? "text"
-                    : "password"
+                  showPassword ? "text" : "password"
                 }
                 placeholder="Create a password"
                 value={formData.password}
